@@ -1,0 +1,13 @@
+{
+  "author": "Luke Kreczko",
+  "dependencies": [],
+  "license": "Apache 2.0",
+  "name": "phxlk-poolaccounts",
+  "operatingsystem_support": [],
+  "project_page": "",
+  "requirements": [],
+  "source": "https://github.com/kreczko/puppet-poolaccounts",
+  "summary": "Puppet module for bulk account creation",
+  "tags": [],
+  "version": "0.1.0"
+}

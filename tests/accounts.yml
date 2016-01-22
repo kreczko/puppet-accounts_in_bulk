@@ -1,0 +1,28 @@
+---
+poolaccounts::create_home_dirs: true
+# groups that will be added using the Puppet 'group' resource
+poolaccounts::groups:
+  cms: 7000
+  cmspilot: 8000
+
+poolacounts::accounts:
+  cms:
+    start: '0001'
+    end: '1000'
+    start_uid: 70000
+    end_uid: 70999
+    primary_group: cms
+  cmspil:
+    start: '0001'
+    end: '1000'
+    start_uid: 80000
+    end_uid: 80999
+    primary_group: cmspilot
+# single accounts that will be created using the Puppet 'user' resource 
+poolaccounts::special_users:
+  cmsprd:
+    uid: 65627
+    primary_group: cms
+  cmssgm:
+    uid: 65621
+    primary_group: cms
